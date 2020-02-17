@@ -11,6 +11,11 @@ body {
   font-family: "Muli", sans-serif;
   line-height: 1.6;
 }
+
+h3 {
+  padding-bottom: 2rem;
+}
+
 .nav {
   &-bar {
     display: grid;
@@ -26,7 +31,7 @@ body {
     letter-spacing: 0.2rem;
     color: $nav-gray;
     margin-left: 1.5rem;
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   &-text {
     color: $nav-gray;
@@ -35,13 +40,15 @@ body {
     border-right: 1px solid $nav-gray;
     padding-right: 1rem;
     font-size: 0.7rem;
+    letter-spacing: 0.2rem;
+    align-items: center;
   }
 }
 
 .icons {
   display: flex;
   justify-content: space-around;
-  color: $light-gray;
+  color: $nav-gray;
 }
 
 .section {
@@ -59,6 +66,14 @@ body {
     height: 50vh;
     background-color: $dark-gray;
   }
+  &-e {
+    height: 70vh;
+    background-color: black;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: white;
+  }
 }
 
 .b-container {
@@ -69,4 +84,32 @@ body {
   align-items: center;
   text-align: center;
   padding: 3rem;
+}
+
+.florals-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  line-height: 1.8;
+  text-align: center;
+  margin: auto;
+  padding: 3rem;
+}
+
+//Footer
+
+.footer-grid {
+  height: 70vh;
+  display: grid;
+  grid-row: 1fr 1fr;
+}
+
+.up {
+  background-color: #fff;
+}
+
+.down {
+  background-color: $dark-gray;
 }
