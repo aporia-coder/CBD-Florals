@@ -37,11 +37,11 @@ h3 {
     color: $nav-gray;
     grid-column: 2/3;
     justify-self: end;
-    border-right: 1px solid $nav-gray;
     padding-right: 1rem;
     font-size: 0.7rem;
     letter-spacing: 0.2rem;
     align-items: center;
+    border-right: 1px solid $nav-gray;
   }
 }
 
@@ -53,7 +53,7 @@ h3 {
 
 .section {
   &-a {
-    height: 70vh;
+    height: 75vh;
     background: url(./assets/img/landing.jpg) center center / cover;
   }
   &-b {
@@ -108,8 +108,19 @@ h3 {
 
 .up {
   background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: flex-start;
+  padding-top: 2rem;
+}
+
+.sm-logos {
+  align-content: flex-end;
 }
 
 .down {
+  display: grid;
+  grid-column: repeat(3, 1fr);
   background-color: $dark-gray;
 }
