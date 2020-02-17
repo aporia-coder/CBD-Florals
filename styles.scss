@@ -1,0 +1,72 @@
+@import "variables";
+@import "utilities";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Muli", sans-serif;
+  line-height: 1.6;
+}
+.nav {
+  &-bar {
+    display: grid;
+    grid-template-columns: 1fr 1fr 10%;
+    align-items: center;
+    width: 100%;
+    height: 4rem;
+    background-color: $dark-gray;
+    position: fixed;
+  }
+  &-logo {
+    font-weight: 10;
+    letter-spacing: 0.2rem;
+    color: rgb(200, 200, 200);
+    margin-left: 1.5rem;
+    font-size: 1rem;
+  }
+  &-text {
+    color: $light-gray;
+    grid-column: 2/3;
+    justify-self: end;
+    border-right: 1px solid $light-gray;
+    padding-right: 1rem;
+    font-size: 0.7rem;
+  }
+}
+
+.icons {
+  display: flex;
+  justify-content: space-around;
+  color: $light-gray;
+}
+
+.section {
+  &-a {
+    height: 100vh;
+    background: url(./assets/img/landing.jpg) center center / cover;
+  }
+  &-b {
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  &-c {
+    height: 50vh;
+    background-color: $dark-gray;
+  }
+}
+
+.b-container {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
