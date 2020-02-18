@@ -28,7 +28,7 @@ h3 {
   }
   &-logo {
     font-weight: 10;
-    letter-spacing: 0.2rem;
+    letter-spacing: 0.1rem;
     color: $nav-gray;
     margin-left: 1.5rem;
     font-size: 1.2rem;
@@ -39,7 +39,7 @@ h3 {
     justify-self: end;
     padding-right: 1rem;
     font-size: 0.7rem;
-    letter-spacing: 0.2rem;
+    letter-spacing: 0.1rem;
     align-items: center;
     border-right: 1px solid $nav-gray;
   }
@@ -100,10 +100,17 @@ h3 {
 
 //Footer
 
-.footer-grid {
-  height: 70vh;
-  display: grid;
-  grid-row: 1fr 1fr;
+.footer {
+  &-grid {
+    height: 70vh;
+    display: grid;
+    grid-row: 2fr 1fr;
+  }
+  &-text {
+    color: $nav-gray;
+    font-size: 0.7rem;
+    letter-spacing: 0.1rem;
+  }
 }
 
 .up {
@@ -115,8 +122,15 @@ h3 {
   padding-top: 2rem;
 }
 
-.sm-logos {
-  align-content: flex-end;
+.sm {
+  &-logos {
+    align-content: flex-end;
+    padding: 0.5rem;
+  }
+  &-list {
+    font-size: 2rem;
+    color: rgba(169, 169, 169, 0.9);
+  }
 }
 
 .down {
