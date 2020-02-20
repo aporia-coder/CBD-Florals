@@ -22,15 +22,15 @@ h3 {
     grid-template-columns: 1fr 1fr 10%;
     align-items: center;
     width: 100%;
-    height: 4rem;
+    height: 3.9rem;
     background-color: $dark-gray;
     // position: fixed;
   }
   &-logo {
-    font-weight: 10;
+    font-weight: 350;
     letter-spacing: 0.1rem;
     color: $nav-gray;
-    margin-left: 1.5rem;
+    margin-left: 2.5rem;
     font-size: 1.2rem;
   }
   &-text {
@@ -43,6 +43,27 @@ h3 {
     align-items: center;
     border-right: 1px solid $nav-gray;
   }
+}
+
+.nav-style-header {
+  font-weight: 350;
+  letter-spacing: 0.1rem;
+  color: $nav-gray;
+  font-size: 1.2rem;
+}
+
+.nav-logo-lead {
+  font-weight: 100;
+  letter-spacing: 0.1rem;
+  color: $light-gray;
+  font-size: 1.2rem;
+}
+
+.nav-text-lead {
+  font-weight: 100;
+  letter-spacing: 0.1rem;
+  color: $light-gray;
+  font-size: 1rem;
 }
 
 .icons {
@@ -68,7 +89,7 @@ h3 {
     background-color: $dark-gray;
   }
   &-e {
-    height: 70vh;
+    height: 80vh;
     background-color: black;
     display: flex;
     text-align: center;
@@ -153,4 +174,17 @@ h3 {
     font-size: 2rem;
     color: rgba(169, 169, 169, 0.9);
   }
+}
+
+// Flower image styles
+.carousel-container {
+  margin: auto;
+  // overflow: hidden;
+  width: 60%;
+}
+
+.carousel-slider {
+  display: flex;
+  width: 100%;
+  height: 500px;
 }
