@@ -16,10 +16,36 @@
 
 .lead {
   font-size: 0.9rem;
-  font-weight: 200;
+  font-weight: 300;
   color: rgb(78, 78, 78);
 }
 
 .margin {
   padding-top: 2rem;
+}
+
+//Generating utility classes for padding and margin
+
+$spaceamounts: (1, 2, 3, 4, 5, 6);
+$sides: (top, right, bottom, left);
+@each $space in $spaceamounts {
+  @each $side in $sides {
+    .m-#{str-slice($side, 0, 1)-#{$space}} {
+      margin-#{$side}: #{$space}rem;
+    }
+  }
+}
+
+$spaceamounts: (1, 2, 3, 4, 5, 6);
+@each $space in $spaceamounts {
+  .m-#{$space} {
+    margin: #{$space}rem;
+  }
+}
+
+$spaceamounts: (1, 2, 3, 4, 5, 6);
+@each $space in $spaceamounts {
+  .p-#{$space} {
+    padding: #{$space}rem;
+  }
 }
