@@ -37,6 +37,16 @@ $sides: (top, right, bottom, left);
 }
 
 $spaceamounts: (1, 2, 3, 4, 5, 6);
+$sides: (top, right, bottom, left);
+@each $space in $spaceamounts {
+  @each $side in $sides {
+    .p-#{str-slice($side, 0, 1)-#{$space}} {
+      padding-#{$side}: #{$space}rem;
+    }
+  }
+}
+
+$spaceamounts: (1, 2, 3, 4, 5, 6);
 @each $space in $spaceamounts {
   .m-#{$space} {
     margin: #{$space}rem;
