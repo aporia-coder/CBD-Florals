@@ -12,10 +12,6 @@ body {
   line-height: 1.6;
 }
 
-h3 {
-  padding-bottom: 2rem;
-}
-
 .nav {
   &-bar {
     display: grid;
@@ -86,7 +82,7 @@ h3 {
   }
   &-c {
     height: 70vh;
-    // background-color: $dark-gray;
+    background-color: $dark-gray;
     text-align: center;
     border: 1px blue solid;
   }
@@ -101,15 +97,15 @@ h3 {
 // Slideshow
 
 .slideshow {
-  border: 1px red solid;
+  // border: 1px red solid;
   height: 70vh;
   margin: 0 auto;
   position: relative;
 }
 
 .slick {
-  border: 1px dotted red;
-  width: 85%;
+  // border: 1px dotted red;
+  width: 75%;
   height: 50vh;
   margin: 0 auto;
   overflow: hidden;
@@ -122,6 +118,7 @@ h3 {
   font-size: 4rem;
   cursor: pointer;
   display: inline-block !important;
+  color: $product-gray;
 }
 
 #next {
@@ -131,24 +128,33 @@ h3 {
   font-size: 4rem;
   cursor: pointer;
   display: inline-block !important;
+  color: $product-gray;
 }
 
 .product {
-  background-color: blue;
+  // background-color: blue;
   display: inline-block;
   height: 50vh;
   margin: 0 0.5rem;
+  overflow: hidden;
+  &-imgs {
+    overflow: hidden;
+    height: 50vh;
+  }
+  &-img {
+    object-fit: cover;
+    object-position: center center;
+    width: 400px;
+    border: 1px solid $light-gray;
+  }
+  &-text {
+    font-size: 0.9rem;
+    color: $product-gray;
+  }
 }
 
 .center-header {
   display: inline-block;
-}
-
-.flowers {
-  width: 50%;
-  height: auto;
-  background-position: top;
-  background-size: cover;
 }
 
 .b-container {
