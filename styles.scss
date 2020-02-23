@@ -85,21 +85,70 @@ h3 {
     text-align: center;
   }
   &-c {
-    height: 60vh;
-    background-color: $dark-gray;
-    display: flex;
-    justify-content: center;
+    height: 70vh;
+    // background-color: $dark-gray;
     text-align: center;
+    border: 1px blue solid;
   }
   &-e {
     height: 80vh;
     background-color: black;
-    display: flex;
-    text-align: center;
-    justify-content: center;
     color: white;
-    align-items: flex-start;
+    text-align: center;
   }
+}
+
+// Slideshow
+
+.slideshow {
+  border: 1px red solid;
+  height: 70vh;
+  margin: 0 auto;
+  position: relative;
+}
+
+.slick {
+  border: 1px dotted red;
+  width: 85%;
+  height: 50vh;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+#prev {
+  position: absolute;
+  top: 50%;
+  left: 2rem;
+  font-size: 4rem;
+  cursor: pointer;
+  display: inline-block !important;
+}
+
+#next {
+  position: absolute;
+  top: 50%;
+  right: 2rem;
+  font-size: 4rem;
+  cursor: pointer;
+  display: inline-block !important;
+}
+
+.product {
+  background-color: blue;
+  display: inline-block;
+  height: 50vh;
+  margin: 0 0.5rem;
+}
+
+.center-header {
+  display: inline-block;
+}
+
+.flowers {
+  width: 50%;
+  height: auto;
+  background-position: top;
+  background-size: cover;
 }
 
 .b-container {
@@ -179,18 +228,4 @@ h3 {
     font-size: 2rem;
     color: rgba(169, 169, 169, 0.9);
   }
-}
-
-// Flower image styles
-
-.carousel-container {
-  margin: auto;
-  overflow: hidden;
-  width: 60%;
-}
-
-.carouselSlider {
-  display: flex;
-  width: 100%;
-  height: 500px;
 }
