@@ -23,7 +23,7 @@ body {
     // position: fixed;
   }
   &-logo {
-    font-weight: 350;
+    font-weight: 400;
     letter-spacing: 0.1rem;
     color: $nav-gray;
     margin-left: 2.5rem;
@@ -42,7 +42,7 @@ body {
 }
 
 .nav-style-header {
-  font-weight: 350;
+  font-weight: 300;
   letter-spacing: 0.1rem;
   color: $nav-gray;
   font-size: 1.2rem;
@@ -81,10 +81,10 @@ body {
     text-align: center;
   }
   &-c {
-    height: 70vh;
+    height: 75vh;
     background-color: $dark-gray;
     text-align: center;
-    border: 1px blue solid;
+    // border: 1px blue solid;
   }
   &-e {
     height: 80vh;
@@ -115,7 +115,7 @@ body {
   position: absolute;
   top: 50%;
   left: 2rem;
-  font-size: 4rem;
+  font-size: 5rem;
   cursor: pointer;
   display: inline-block !important;
   color: $product-gray;
@@ -125,14 +125,14 @@ body {
   position: absolute;
   top: 50%;
   right: 2rem;
-  font-size: 4rem;
+  font-size: 5rem;
   cursor: pointer;
   display: inline-block !important;
   color: $product-gray;
 }
 
 .product {
-  // background-color: blue;
+  // border: 1px solid $light-gray;
   display: inline-block;
   height: 50vh;
   margin: 0 0.5rem;
@@ -140,18 +140,23 @@ body {
   &-imgs {
     overflow: hidden;
     height: 50vh;
+    width: 50vh;
+    // border-top: 1px solid $light-gray;
   }
   &-img {
     object-fit: cover;
     object-position: center center;
     width: 400px;
-    border: 1px solid $light-gray;
+    height: 100%;
   }
   &-text {
     font-size: 0.9rem;
     color: $product-gray;
+    font-weight: 100;
   }
 }
+
+//Flowers
 
 .center-header {
   display: inline-block;
@@ -209,9 +214,10 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   background-color: $dark-gray;
-  align-content: space-around;
+  align-content: space-between;
   &-1 {
     grid-column: 0/1;
+    align-content: space-around;
   }
   &-2 {
     grid-column: 2/3;
@@ -234,4 +240,14 @@ body {
     font-size: 2rem;
     color: rgba(169, 169, 169, 0.9);
   }
+}
+
+.footer-text {
+  font-size: 0.7rem;
+  letter-spacing: 0.1rem;
+  color: $nav-gray;
+}
+
+#close {
+  padding: 1rem 2rem;
 }
