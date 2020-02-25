@@ -59,3 +59,22 @@ $spaceamounts: (1, 2, 3, 4, 5, 6);
     padding: #{$space}rem;
   }
 }
+
+//Buttons
+.btn {
+  display: inline-block;
+  background-color: $nav-gray;
+  color: #333;
+  border: none;
+  padding: 0.8rem 2.6rem;
+  cursor: pointer;
+  font-size: 1.2rem;
+  margin-right: 1rem;
+  outline: none;
+  transition: all 0.3s ease-in;
+  font-family: inherit;
+  &:hover {
+    background: lighten($nav-gray, 20%);
+    color: white;
+  }
+}
