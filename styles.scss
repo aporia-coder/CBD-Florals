@@ -1,16 +1,6 @@
 @import "variables";
 @import "utilities";
-
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Muli", sans-serif;
-  line-height: 1.6;
-}
+@import "base";
 
 .nav {
   &-bar {
