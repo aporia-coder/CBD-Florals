@@ -1,6 +1,10 @@
+// Imports
+
 @import "variables";
 @import "utilities";
 @import "base";
+
+// Navbar
 
 .nav {
   &-bar {
@@ -10,7 +14,6 @@
     width: 100%;
     height: 3.9rem;
     background-color: $dark-gray;
-    // position: fixed;
   }
   &-logo {
     font-weight: 400;
@@ -57,36 +60,27 @@
   justify-content: space-around;
   color: $nav-gray;
   margin-right: 1rem;
-  &-border {
-    border-left: 1px solid $light-gray;
-  }
 }
 
 // Landing styles
 
 .landing-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  @include flexCenter;
   border: 1px red solid;
   width: 80%;
   height: 80%;
 }
 
+// Site Sections
+
 .section {
   &-a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flexCenter;
     height: 75vh;
     background: url(./assets/img/landing.jpg) center center / cover;
   }
   &-b {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    @include flexCenter;
   }
   &-c {
     height: 75vh;
@@ -105,14 +99,12 @@
 // Slideshow
 
 .slideshow {
-  // border: 1px red solid;
   height: 70vh;
   margin: 0 auto;
   position: relative;
 }
 
 .slick {
-  // border: 1px dotted red;
   width: 75%;
   height: 50vh;
   margin: 0 auto;
@@ -139,8 +131,9 @@
   color: $product-gray;
 }
 
+//Products
+
 .product {
-  // border: 1px solid $light-gray;
   display: inline-block;
   height: 50vh;
   margin: 0 0.5rem;
@@ -149,7 +142,6 @@
     overflow: hidden;
     height: 50vh;
     width: 50vh;
-    // border-top: 1px solid $light-gray;
   }
   &-img {
     object-fit: cover;
@@ -164,32 +156,29 @@
   }
 }
 
-//Flowers
+// Text Section
 
 .center-header {
   display: inline-block;
 }
 
 .b-container {
-  display: flex;
-  flex-direction: column;
+  @include flexCenter;
   width: 55%;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
   padding: 3rem;
 }
 
 .florals-flex {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  @include flexCenter;
   width: 80%;
-  line-height: 1.8;
-  text-align: center;
   margin: auto;
   padding: 3rem;
+}
+
+// Legal Compliance
+
+.legal {
+  @include flexCenter;
 }
 
 //Footer
@@ -209,6 +198,8 @@
   }
 }
 
+//Footer Grid
+
 .down {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -216,7 +207,6 @@
   align-content: space-between;
   &-1 {
     grid-column: 0/1;
-    align-self: center;
   }
   &-2 {
     grid-column: 2/3;
@@ -226,8 +216,6 @@
   }
   &-3 {
     grid-column: 3/4;
-    justify-self: end;
-    align-self: center;
   }
 }
 
@@ -239,10 +227,4 @@
     font-size: 2rem;
     color: rgba(169, 169, 169, 0.9);
   }
-}
-
-.footer-text {
-  font-size: 0.7rem;
-  letter-spacing: 0.1rem;
-  color: $nav-gray;
 }
