@@ -157,6 +157,27 @@
   }
 }
 
+// Items
+
+.items {
+  @include flexCenter;
+  height: 100vh;
+  background-color: #000;
+  &-container {
+    @include flexCenter;
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    border: 1px solid red;
+  }
+  &-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 1px red dotted;
+    height: 100%;
+  }
+}
+
 // Text Section
 
 .center-header {
