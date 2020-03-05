@@ -169,12 +169,25 @@
     height: 80%;
     margin: auto;
     border: 1px solid red;
+    overflow: hidden;
   }
   &-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     border: 1px red dotted;
     height: 100%;
+    grid-gap: 10px;
+  }
+}
+
+.gallery {
+  &-small {
+    max-width: 150px;
+    max-height: 150px;
+  }
+
+  &-flex {
+    display: flex;
   }
 }
 

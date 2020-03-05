@@ -3,23 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <!-- <link
-    href="https://fonts.googleapis.com/css?family=Muli&display=swap"
-    rel="stylesheet"
-    /> -->
     <link href="https://fonts.googleapis.com/css?family=Muli:200,300,400&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/0fca5b2a09.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
     <link rel="stylesheet" href="./styles.min.css" />
     <title>CBD Florals</title>
   </head>
   <body>
     <nav class="nav-bar">
-      <h1 class="nav-logo">CBD FLORALS</h1>
+      <a href="/index.html"><h1 class="nav-logo">CBD FLORALS</h1></a>
       <div class="nav-text">
         <a href="/products.html"><p class="p-r-2"> - PRODUCTS</p></a>
         <a href="/index.html"><p class="p-r-2">HOME</p></a>
-      </div> 
+      </div>
       <div>
         <ul class="icons">
           <i class="fas fa-search"></i>
@@ -31,8 +27,19 @@
     <section class="items">
       <div class="items-container">
         <div class="items-grid">
-          
+          <div class="gallery">
+            <a data-fancybox="gallery" href="/assets/img/flowers/roses/rose.jpg"><img src="/assets/img/flowers/rose.jpg" alt=""/></a>
+            <ul class="gallery-flex mr-2">
+              <li class="gallery-small p-1">
+                <a data-fancybox="gallery" href="/assets/img/flowers/roses/hash.jpg" class="ph-1"><img src="/assets/img/flowers/roses/hash.jpg" alt="" /></a>
+              </li>
+              <li class="gallery-small p-1">
+                <a data-fancybox="gallery" href="/assets/img/flowers/roses/hash.jpg" class="ph-1"><img src="/assets/img/flowers/roses/hash-2.jpg" alt="" /></a>
+              </li>
+            </ul>
+          </div>
         </div>
+        
       </div>
 
     </section>
@@ -59,5 +66,7 @@
         </div>
       </div>
       </footer>
+      <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
   </body>
 </html>
