@@ -168,13 +168,13 @@
     width: 80%;
     height: 80%;
     margin: auto;
-    border: 1px solid red;
+    // border: 1px solid red;
     overflow: hidden;
   }
   &-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    border: 1px red dotted;
+    // border: 1px red dotted;
     height: 100%;
     grid-gap: 10px;
   }
