@@ -1,59 +1,49 @@
+// Imports
+
 @import "variables";
 @import "utilities";
+@import "base";
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Muli", sans-serif;
-  line-height: 1.6;
-}
-
-h3 {
-  padding-bottom: 2rem;
-}
+// Navbar
 
 .nav {
   &-bar {
     display: grid;
-    grid-template-columns: 1fr 1fr 10%;
+    grid-template-columns: 1fr 2fr 15%;
     align-items: center;
     width: 100%;
     height: 3.9rem;
     background-color: $dark-gray;
-    // position: fixed;
   }
   &-logo {
-    font-weight: 350;
+    font-weight: 400;
     letter-spacing: 0.1rem;
     color: $nav-gray;
     margin-left: 2.5rem;
     font-size: 1.2rem;
   }
   &-text {
+    display: flex;
     color: $nav-gray;
     grid-column: 2/3;
     justify-self: end;
-    padding-right: 1rem;
+    padding: 1rem 1rem;
     font-size: 0.7rem;
     letter-spacing: 0.1rem;
     align-items: center;
-    border-right: 1px solid $nav-gray;
+    border-right: 1px solid rgba(169, 169, 169, 0.2);
   }
 }
 
 .nav-style-header {
-  font-weight: 350;
+  font-weight: 300;
   letter-spacing: 0.1rem;
   color: $nav-gray;
   font-size: 1.2rem;
 }
 
 .nav-logo-lead {
-  font-weight: 100;
+  font-weight: 350;
   letter-spacing: 0.1rem;
   color: $light-gray;
   font-size: 1.2rem;
@@ -73,51 +63,157 @@ h3 {
   margin-right: 1rem;
 }
 
+// Landing styles
+
+.landing-container {
+  @include flexCenter;
+  // border: 1px red solid;
+  width: 80%;
+  height: 80%;
+}
+
+// Site Sections
+
 .section {
   &-a {
+    @include flexCenter;
     height: 75vh;
     background: url(./assets/img/landing.jpg) center center / cover;
   }
   &-b {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    @include flexCenter;
   }
   &-c {
-    height: 50vh;
+    height: 75vh;
     background-color: $dark-gray;
+    text-align: center;
+    // border: 1px blue solid;
   }
   &-e {
     height: 80vh;
     background-color: black;
-    display: flex;
-    text-align: center;
-    justify-content: center;
     color: white;
+    text-align: center;
   }
 }
 
+// Slideshow
+
+.slideshow {
+  height: 70vh;
+  margin: 0 auto;
+  position: relative;
+}
+
+.slick {
+  width: 75%;
+  height: 50vh;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+#prev {
+  position: absolute;
+  top: 50%;
+  left: 2rem;
+  font-size: 5rem;
+  cursor: pointer;
+  display: inline-block !important;
+  color: $product-gray;
+}
+
+#next {
+  position: absolute;
+  top: 50%;
+  right: 2rem;
+  font-size: 5rem;
+  cursor: pointer;
+  display: inline-block !important;
+  color: $product-gray;
+}
+
+//Products
+
+.product {
+  display: inline-block;
+  height: 50vh;
+  margin: 0 0.5rem;
+  overflow: hidden;
+  &-imgs {
+    overflow: hidden;
+    height: 50vh;
+    width: 50vh;
+  }
+  &-img {
+    object-fit: cover;
+    object-position: center center;
+    width: 400px;
+    height: 100%;
+  }
+  &-text {
+    font-size: 0.9rem;
+    color: $product-gray;
+    font-weight: 100;
+  }
+}
+
+// Items
+
+.items {
+  @include flexCenter;
+  height: 100vh;
+  background-color: #000;
+  &-container {
+    @include flexCenter;
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    // border: 1px solid red;
+    overflow: hidden;
+  }
+  &-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    // border: 1px red dotted;
+    height: 100%;
+    grid-gap: 10px;
+  }
+}
+
+.gallery {
+  &-small {
+    max-width: 150px;
+    max-height: 150px;
+  }
+
+  &-flex {
+    display: flex;
+  }
+}
+
+// Text Section
+
+.center-header {
+  display: inline-block;
+}
+
 .b-container {
-  display: flex;
-  flex-direction: column;
+  @include flexCenter;
   width: 55%;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
   padding: 3rem;
 }
 
 .florals-flex {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  @include flexCenter;
   width: 80%;
-  line-height: 1.8;
-  text-align: center;
   margin: auto;
   padding: 3rem;
+}
+
+// Legal Compliance
+
+.legal {
+  @include flexCenter;
 }
 
 //Footer
@@ -137,20 +233,14 @@ h3 {
   }
 }
 
-.up {
-  background-color: #fff;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  justify-content: flex-start;
-  padding-top: 2rem;
-}
+//Footer Grid
 
 .down {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   background-color: $dark-gray;
-  align-content: space-around;
+  align-content: space-between;
+  border-top: 1px solid $nav-gray;
   &-1 {
     grid-column: 0/1;
   }
@@ -162,8 +252,6 @@ h3 {
   }
   &-3 {
     grid-column: 3/4;
-    justify-self: end;
-    align-self: center;
   }
 }
 
@@ -172,25 +260,7 @@ h3 {
     padding: 0.5rem;
   }
   &-list {
-    // align-self: flex-end;
     font-size: 2rem;
     color: rgba(169, 169, 169, 0.9);
   }
-}
-
-// Flower image styles
-.flowers {
-  object-fit: scale-down;
-}
-
-.carousel-container {
-  margin: auto;
-  overflow: hidden;
-  width: 60%;
-}
-
-.carouselSlider {
-  display: flex;
-  width: 100%;
-  height: 500px;
 }

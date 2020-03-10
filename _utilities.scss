@@ -2,24 +2,112 @@
   font-weight: bold;
 }
 
-.text-dark {
-  color: $dark-gray;
-}
-
-.text-light {
-  color: $light-gray;
-}
-
 .italic {
   font-style: italic;
 }
 
 .lead {
   font-size: 0.9rem;
-  font-weight: 200;
+  font-weight: 300;
   color: rgb(78, 78, 78);
 }
 
 .margin {
   padding-top: 2rem;
 }
+
+// Mixins for flex
+
+@mixin flexCenter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+@mixin set-background($color) {
+  background-color: $color;
+  color: set-text-color($color);
+}
+
+// Functions
+
+// @function set-text-color($color) {
+//   @if (lightness($color) > 50) {
+//     @return $dark-color;
+//   } @else {
+//     @return $light-color;
+//   }
+// }
+
+//Generating utility classes for padding and margin
+
+$spaceamounts: (1, 2, 3, 4, 5, 6);
+$sides: (top, right, bottom, left);
+@each $space in $spaceamounts {
+  @each $side in $sides {
+    .m-#{str-slice($side, 0, 1)-#{$space}} {
+      margin-#{$side}: #{$space}rem;
+    }
+  }
+}
+
+$spaceamounts: (1, 2, 3, 4, 5, 6);
+$sides: (top, right, bottom, left);
+@each $space in $spaceamounts {
+  @each $side in $sides {
+    .p-#{str-slice($side, 0, 1)-#{$space}} {
+      padding-#{$side}: #{$space}rem;
+    }
+  }
+}
+
+$spaceamounts: (1, 2, 3, 4, 5, 6);
+@each $space in $spaceamounts {
+  .m-#{$space} {
+    margin: #{$space}rem;
+  }
+}
+
+$spaceamounts: (1, 2, 3, 4, 5, 6);
+@each $space in $spaceamounts {
+  .p-#{$space} {
+    padding: #{$space}rem;
+  }
+}
+
+$spaceamounts: (1, 2, 3, 4, 5, 6);
+@each $space in $spaceamounts {
+  .ph-#{$space} {
+    padding: 0 #{$space}rem;
+  }
+}
+
+//Buttons
+.btn-test {
+  display: inline-block;
+  background-color: $dark-gray;
+  color: #333;
+  border: none;
+  padding: 1rem 3rem;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-right: 1rem;
+  outline: none;
+  transition: all 0.3s ease-in;
+  font-family: "Muli";
+  @include set-background($dark-gray);
+  &:hover {
+    background: lighten($dark-gray, 15%);
+    color: #000;
+  }
+}
+
+// .btn-test {
+//   @include set-background($green-color);
+//   &:hover {
+//     background: lighten($green-color, 15%);
+//   }
+// }

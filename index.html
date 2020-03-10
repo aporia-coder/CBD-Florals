@@ -3,29 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles.min.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Muli&display=swap"
-      rel="stylesheet"
-    />
-    <link href="https://fonts.googleapis.com/css?family=Muli:200,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Muli:200,300,400&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/0fca5b2a09.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles.min.css" />
     <title>CBD Florals</title>
   </head>
   <body>
     <nav class="nav-bar">
-      <h1 class="nav-logo">CBD FLORALS</h1>
-        <p class="nav-text">PRODUCTS</p>
-      <div class="icons">
-        <i class="fas fa-search"></i>
-        <i class="fas fa-shopping-cart"></i>
-        <i class="fas fa-user"></i>
+      <a href="/index.html"><h1 class="nav-logo">CBD FLORALS</h1></a>
+      <div class="nav-text">
+        <a href="/products.html"><p class="p-r-2"> - PRODUCTS</p></a>
+        <a href="/index.html"><p class="p-r-2">HOME</p></a>
+      </div> 
+      <div>
+        <ul class="icons">
+          <i class="fas fa-search"></i>
+          <i class="fas fa-shopping-cart"></i>
+          <i class="fas fa-user"></i>
+        </ul>
       </div>
     </nav>
-    <section class="section-a"></section>
-    <section class="section-b">
+    <section class="section-a">
+      <div class="landing-container">
+        <a href="#products"><button class="btn-test">PRODUCTS</button></a>
+      </div>
+    </section>
+    <section class="section-b p-b-2">
       <div class="b-container">
-        <h3 class="bold">Greetings and Welcome to CBD Florals!</h3>
+        <h3 class="bold p-b-2">Greetings and Welcome to CBD Florals!</h3>
         <br />
         <div class="lead italic">
         <p>
@@ -46,12 +52,60 @@
       </div>
     </div>
     </section>
-    <section class="section-c">
-      <!-- Gray Box -->
+    <section class="section-c" id="products">
+      <div class="slideshow">
+        <h3 class="nav-style-header p-t-2 p-b-2 center-header">OUR PRODUCTS</h3>
+        <i class="fas fa-chevron-left" id="prev"></i>
+        <i class="fas fa-chevron-right" id="next"></i>
+        <div class="slick">
+          <div class="product">
+            <h3 class="product-text">1g Rose  flower infused Hash 200mg CBD</h3>
+            <h3 class="product-text p-b-1">£12.50</h3>
+            <div class="product-imgs">
+              <img src="./assets/img/flowers/rose.jpg" class="product-img" alt="">
+            </div>
+          </div>
+          <div class="product">
+            <h3 class="product-text">1g Magnolia flower infused Hash 200mg CBD</h3>
+            <h3 class="product-text p-b-1">£12.50</h3>
+            <div class="product-imgs">
+              <img src="./assets/img/flowers/magnolia.jpg" class="product-img" alt="">
+            </div>
+          </div>
+          <div class="product">
+            <h3 class="product-text">1g Chamomile flower infused Hash 200mg CBD</h3>
+            <h3 class="product-text p-b-1">£12.50</h3>
+            <div class="product-imgs">
+              <img src="./assets/img/flowers/chamomile.jpg" class="product-img" alt="">
+            </div>
+          </div>
+          <div class="product">
+            <h3 class="product-text">1g Butterfly Pea Flower infused Hash 200mg CBD</h3>
+            <h3 class="product-text p-b-1">£12.50</h3>
+            <div class="product-imgs">
+              <img src="./assets/img/flowers/butterfly pea.jpg" class="product-img" alt="">
+            </div>
+          </div>
+          <div class="product">
+            <h3 class="product-text">1g Orange Blossom infused Hash 200mg CBD</h3>
+            <h3 class="product-text p-b-1">£12.50</h3>
+            <div class="product-imgs">
+              <img src="./assets/img/flowers/orange blossom.jpg" class="product-img" alt="">
+            </div>
+          </div>
+          <div class="product">
+            <h3 class="product-text">1g Calendula Flower infused Hash 200mg CBD</h3>
+            <h3 class="product-text p-b-1">£12.50</h3>
+            <div class="product-imgs">
+              <img src="./assets/img/flowers/calendula.jpg" class="product-img" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-    <section class="section-d">
+    <section class="section-d m-b-2">
       <div class="florals-flex lead">
-        <h1 class="nav-logo-lead">CBD FLORALS</h1>
+        <h1 class="nav-logo-lead m-b-2">CBD FLORALS</h1>
         <p class="italic">At CBD Florals, we select only the highest quality flowering bodies from specific plant species known for their long standing medicinal and culinary purposes from across the land!! Giving our CBD hash that added affect!!</p>
         <br/>
         <p class="italic">To our knowledge and delight, we are also the only company to bring you the first hemp hash product containing absolutely 0.00% THC yet rich in glorious CBG cannabinoids!! We are setting the bar very high in the UK hemp hash industry scene indeed!!</p>
@@ -60,65 +114,35 @@
           Try out our range of fine products derived from various EU hemp strains, blended either in combination complexes with other botanicals or in solo hemp extract forms, infused with Terpenes from award winning Cannabis strains and manufactured via an array of extraction methods to produce a range of premium products with great variety and potency containing a minimum of 25% CBD or other Cannabinoids!!!</p>
           <br/>
           <p class="italic">Additionally, we have patiently sourced the most wonderful most medicinal hemp flowers including our medical grade Jamaican hemp!! She's a real dream!!</p>
-          <br/>
-          <h2>The Science</h2>
-          <p class="italic">Our products are based on the science of the - talk about holistic herbal health 
-
-            entourage affect, where distinct botanicals and nutritionals interact together producing a superior and synergistic outcome.
-            
-            Fewer are aware that this phenomena is not limited to the cannabinoids within hemp and cannabis plants, but occurs throughout nutrition and ethnopharmacology!! 
-            
-            Here, we take advantage of this affect by using CBD in combination with our other relaxing flowers with longstanding therapeutic usage!!  making our CBD hash run that extra mile!!</p>
-            <h2>The Benefit</h2>
-            <p class="italic">Their ideal, whether your trying to cut down your intake, are looking for that weaker mid-week smoke, or simply want to cash in on CBD’s health benefits with an added boost of our other botanicals!!
-
-              You'll find our petals taste beautiful and are perfect in a roll up or go great in vape!!  
-              
-              Well what are you waiting for!?! Taste our delicious flavours and aromas for your-self!!
-              
-              Yours in good health. 
-              
-              CBD Florals</p>
       </div>
-    </section>
-    <section class="section-e">
-      <div class="carousel-container">
-        <h3 class="nav-style-header">OUR FLOWERS</h3>
-        <div class="carouselSlider">
-          <img src="./assets/img/flowers/butterfly pea.jpg" alt="Butterfly Pea" id="lastClone">
-          <img src="./assets/img/flowers/rose.jpg" alt="Rose">
-          <img src="./assets/img/flowers/echinacea.jpg" alt="Echinacea">
-          <img src="./assets/img/flowers/orange blossom.jpg" alt="Orange Blossom">
-          <img src="./assets/img/flowers/butterfly pea.jpg" alt="Butterfly Pea">
-          <img src="./assets/img/flowers/rose.jpg" alt="Rose" id="firstClone" class="flowers">
-        </div>
-      </div>
-
     </section>
     <footer>
-      <div class="footer-grid">
-        <div class="up">
-          <h3 class="bold">Legal Disclaimer</h3>
-          <ul class="sm-list">
-            <i class="fab fa-facebook sm-logos"></i>
-            <i class="fab fa-instagram sm-logos"></i>
-            <i class="fab fa-linkedin sm-logos"></i>
-          </ul>
-        </div>
         <div class="down nav-style-header">
           <div class="down-1">
-            <h3 class="nav-text">COPYRIGHT © 2020 CBD FLORALS - ALL RIGHTS RESERVED.</h3>
-            <h3 class="nav-text">LEGAL COMPLIANCE </h3>
-            <h3 class="nav-text">COOKIES</h3>
+            <p class="footer-text" >LEGAL DISCALAIMER: THIS PRODUCT IS NOT INTENDED TO DIAGNOSE, TREAT, CURE OR PREVENT ANY ILLNESS </p>
+            <a href="/legal-compliance.html"><p class="footer-text">LEGAL COMPLIANCE</p></a>
+            <p class="footer-text">COOKIES</p>
           </div>
           <div class=down-2>
-            <h3 class="nav-text">PRIVACY POLICY</h3>
+            <p class="footer-text">PRIVACY POLICY</p>
           </div>
-          <div class="down-3 nav-text">
-            <h3>PAYMENT PROCESSORS ETC</h3>
+          <div class="down-3 footer-text">
+            <p class="m-b-2">COPYRIGHT © 2020 CBD FLORALS - ALL RIGHTS RESERVED.</p>
+            <p>PAYMENT PROCESSORS ETC</p>
+            <ul class="sm-list p-t-2">
+              <i class="fab fa-facebook sm-logos"></i>
+              <i class="fab fa-instagram sm-logos"></i>
+              <i class="fab fa-linkedin sm-logos"></i>
+            </ul>
           </div>
         </div>
       </div>
       </footer>
+      <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"></script>
+      <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+      <script src="slick.js"></script>
   </body>
 </html>
