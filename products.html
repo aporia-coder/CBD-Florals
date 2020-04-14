@@ -13,9 +13,9 @@
     <nav class="nav-bar">
       <a href="/index.html"><h1 class="nav-logo">CBD FLORALS</h1></a>
       <div class="nav-text">
-        <a href="/products.html"><p class="p-r-2"> - PRODUCTS</p></a>
+        <a href="/allproducts.html"><p class="p-r-2"> - PRODUCTS</p></a>
         <a href="/index.html"><p class="p-r-2">HOME</p></a>
-      </div>
+      </div> 
       <div>
         <ul class="icons">
           <i class="fas fa-search"></i>
@@ -28,7 +28,7 @@
       <div class="items-container">
         <div class="items-grid">
           <div class="gallery">
-            <a data-fancybox="gallery" href="/assets/img/flowers/roses/rose.jpg"><img src="/assets/img/flowers/rose.jpg" alt=""/></a>
+            <a data-fancybox="gallery" href="/assets/img/flowers/rose.jpg"><img src="/assets/img/flowers/rose.jpg" alt=""/></a>
             <ul class="gallery-flex mr-2">
               <li class="gallery-small p-1">
                 <a data-fancybox="gallery" href="/assets/img/flowers/roses/hash.jpg" class="ph-1"><img src="/assets/img/flowers/roses/hash.jpg" alt="" /></a>
@@ -38,35 +38,85 @@
               </li>
             </ul>
           </div>
+          <div class="tabs">
+            <div>
+              <h1 class="product-header">1g Rose  flower infused Hash 200mg CBD</h1>
+              <div class="container-button">
+                <button class='tab' onclick="showPanels(0)">General Info</button>
+                <button class='tab' onclick="showPanels(1)">Pharmacology</button>
+                <button class='tab' onclick="showPanels(2)">Precautions</button>
+              </div>
+              <p class='product-text'>The Rosaceae family is said to be as ancient 30 million years old; the Middle East and in particular Iran being the place of its humble origin. 
+              Although it’s medicinal properties are numerous and profound, it’s famous more so for its rich aroma and distinctive, luxurious fragrance that has been used in perfumes for thousands of years. 
+              The plant it’s self has been harnessed in various form; the petals may be eaten whole or brewed in tea, whereas the hips or seed pods are more commonly used in extracts by western nutraceutical companies for oral consumption or as ointments and lotions.
+              </p>
+              <p class="product-text">Much research has been conducted into the health benefits this plant may have to offer. 
+                The rose contains many active ingredients including various Terpenes, Flavonoids, glycosides and fatty acids, owing to it’s large therapeutic window for various ailments.
+                Much evidence has arisen suggesting possible neuroprotective affects, anti-convulsive, analgesic and anti-diabetic properties, amongst much else. 
+                Although clinical testing has demonstrated specific constituents of Rose extract may be affective for these ailments; we do not recommend nor claim our product treats these issues. 
+                Furthermore, studies have proven that many of the constituents found in the rose extract, notably the Flavonoids, in fact stimulate the GABAa receptors in the brain; perhaps explaining the calming affect experienced when one inhales the precious essential oils </p>
+              <p class="product-text">Hay fever suffers use with caution: may contain plant pollen. 
+                Persons suffering from ATOPY should consume with caution.
+                Persons suffering from diabetes should consume with caution. 
+                Do not consume in combination with sedative medications. 
+                In instance of side effects, refrain from driving or operating heavy machinery. 
+                Do not consume this product whilst pregnant or breastfeeding.
+                Keep away from children. 
+                </p>
+            </div>
+            <div class="select-buttons">
+              <p style='color: #FFF'>Quantity</p>
+              <select name="quantity" id="">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select>
+              <button class="btn-test">- ADD TO CART -</button>
+            </div>
+          </div>
         </div>
-        
       </div>
-
     </section>
-
     <footer>
-        <div class="down nav-style-header">
-          <div class="down-1">
-            <p class="footer-text" >LEGAL DISCALAIMER: THIS PRODUCT IS NOT INTENDED TO DIAGNOSE, TREAT, CURE OR PREVENT ANY ILLNESS </p>
-            <a href="/legal-compliance.html"><p class="footer-text">LEGAL COMPLIANCE</p></a>
-            <a href="cookies.html"><p class="footer-text">COOKIES</p></a>
-          </div>
-          <div class=down-2>
-            <p class="footer-text">PRIVACY POLICY</p>
-          </div>
-          <div class="down-3 footer-text">
-            <p class="m-b-2">COPYRIGHT © 2020 CBD FLORALS - ALL RIGHTS RESERVED.</p>
-            <p>PAYMENT PROCESSORS ETC</p>
-            <ul class="sm-list p-t-2">
-              <i class="fab fa-facebook sm-logos"></i>
-              <i class="fab fa-instagram sm-logos"></i>
-              <i class="fab fa-linkedin sm-logos"></i>
-            </ul>
-          </div>
+      <div class="down nav-style-header">
+        <div class="down-1">
+          <p class="footer-text" >COPYRIGHT © 2020 CBD FLORALS - ALL RIGHTS RESERVED.</p>
+          <a href="/legal-compliance.html"><p class="footer-text">LEGAL COMPLIANCE</p></a>
+          <p class="footer-text">SHIPPING</p>
+          <p class="footer-text">TERMS AND CONDITIONS</p>
+        </div>
+        <div class=down-2>
+          <img src="./assets/img/logo.svg" alt="logo" style="width: 80%">
+          <p class="footer-text" id="legal">LEGAL DISCALAIMER: THIS PRODUCT IS NOT INTENDED TO DIAGNOSE, TREAT, CURE OR PREVENT ANY ILLNESS </p>
+        </div>
+        <div class="down-3 footer-text">
+          <p class="m-b-2">PRIVACY POLICY</p>
+          <p>PAYMENT PROCESSORS ETC</p>
+          <ul class="sm-list p-t-2">
+            <i class="fab fa-facebook sm-logos"></i>
+            <i class="fab fa-instagram sm-logos"></i>
+            <i class="fab fa-linkedin sm-logos"></i>
+          </ul>
+            <div class="newsletter-form">
+              <p class="m-t-1 p-b-1">Subscribe to our Newsletter!</p>
+              <div>
+                <input type="email" class="newsletter" placeholder="Enter Email...">
+                <a href="#"><i class="fas fa-chevron-right"></i></a>
+              </div>
+            </div>
         </div>
       </div>
-      </footer>
+    </div>
+    </footer>
       <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
       <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+      <script src="tabs.js"></script>
   </body>
 </html>

@@ -9,7 +9,6 @@
 .nav {
   &-bar {
     display: grid;
-    // position: fixed;
     grid-template-columns: 1fr 2fr 15%;
     align-items: center;
     width: 100%;
@@ -94,6 +93,8 @@
     text-align: center;
     // border: 1px blue solid;
   }
+  &-d {
+  }
   &-e {
     height: 80vh;
     background-color: black;
@@ -101,6 +102,11 @@
     text-align: center;
   }
 }
+
+// #white {
+//   color: #fff;
+//   text-shadow: 2px 2px 5px #000;
+// }
 
 // Slideshow
 
@@ -156,9 +162,16 @@
     height: 100%;
   }
   &-text {
+    display: block;
     font-size: 0.9rem;
     color: $product-gray;
     font-weight: 100;
+  }
+  &-header {
+    color: $product-gray;
+    font-weight: 100;
+    font-size: 1rem;
+    font-family: "Muli", sans-serif;
   }
 }
 
@@ -166,7 +179,7 @@
 
 .items {
   @include flexCenter;
-  height: 100vh;
+  min-height: 100vh;
   background-color: #000;
   &-container {
     @include flexCenter;
@@ -183,6 +196,15 @@
     height: 100%;
     grid-gap: 10px;
   }
+  &-products {
+    min-height: 100vh;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 80%;
+  }
 }
 
 .gallery {
@@ -194,6 +216,18 @@
   &-flex {
     display: flex;
   }
+}
+
+.tabs {
+  display: grid;
+  grid-template-rows: 3fr 1fr;
+}
+
+.select-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50%;
 }
 
 // Text Section
@@ -217,8 +251,8 @@
 
 // Legal Compliance
 
-.legal {
-  @include flexCenter;
+#legal {
+  color: #696969;
 }
 
 //Footer
@@ -232,6 +266,7 @@
   }
   &-text {
     color: $nav-gray;
+    // text-align: center;
     font-size: 0.7rem;
     letter-spacing: 0.1rem;
     padding: 2rem 2rem;
@@ -268,4 +303,16 @@
     font-size: 2rem;
     color: rgba(169, 169, 169, 0.9);
   }
+}
+
+.newsletter {
+  border-radius: 50px;
+  border: none;
+  padding: 0.5rem 1rem;
+  background-color: rgb(50, 50, 50);
+  color: #fff;
+}
+
+.cart {
+  height: 2rem;
 }

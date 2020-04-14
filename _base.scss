@@ -9,6 +9,10 @@ html {
 }
 
 body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  grid-template-rows: 1fr auto;
   font-family: "Muli", sans-serif;
   line-height: 1.6;
 }
@@ -25,4 +29,14 @@ li {
 img {
   width: 100%;
   overflow: hidden;
+}
+
+button {
+  text-decoration: none;
+  font-family: inherit;
+  padding: 0.5rem;
+}
+
+footer {
+  margin-top: auto;
 }

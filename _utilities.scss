@@ -10,6 +10,9 @@
   font-size: 0.9rem;
   font-weight: 300;
   color: rgb(78, 78, 78);
+  &-white {
+    color: #fff;
+  }
 }
 
 .margin {
@@ -96,8 +99,8 @@ $spaceamounts: (1, 2, 3, 4, 5, 6);
 .btn-test {
   display: inline-block;
   background-color: $dark-gray;
-  color: #333;
-  border: none;
+  color: #fff;
+  border: 2px solid #fff;
   padding: 1rem 3rem;
   cursor: pointer;
   font-size: 1.2rem;
@@ -106,10 +109,9 @@ $spaceamounts: (1, 2, 3, 4, 5, 6);
   outline: none;
   transition: all 0.3s ease-in;
   font-family: "Muli";
-  @include set-background($dark-gray);
+  // @include set-background($dark-gray);
   &:hover {
-    background: lighten($dark-gray, 15%);
-    color: #000;
+    background: darken($dark-gray, 20%);
   }
 }
 
